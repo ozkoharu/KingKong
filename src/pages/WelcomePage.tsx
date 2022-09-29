@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { BaseButton } from "../components/button/BaseButton";
 import { PageStateContext } from "./App";
+import axios from "axios";
 
 const WelcomePage = () => {
     const { page, setPage } = useContext(PageStateContext);

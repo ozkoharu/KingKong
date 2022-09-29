@@ -3,6 +3,13 @@ import { LatLng } from "leaflet";
 import { LocationPoint } from "./App";
 import { MapContainer, Marker, TileLayer, useMapEvents } from "react-leaflet";
 import "leaflet/dist/leaflet.css"
+//Marker壊れたとき用
+import L from 'leaflet';
+L.Icon.Default.mergeOptions({
+    iconRetinaUrl: require('leaflet/dist/images/marker-icon-2x.png'),
+    iconUrl: require('leaflet/dist/images/marker-icon.png'),
+    shadowUrl: require('leaflet/dist/images/marker-shadow.png')
+})
 
 const position = new LatLng(38.72311671577611, 141.0346841825174);
 const zoomlebel = 18;
